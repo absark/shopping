@@ -5,6 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormComponent } from './form/form.component';
 import { EmpolyeeService } from './shared/empolyee.service';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { EmpolyeeService } from './shared/empolyee.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    AngularFireModule.initializeApp(environment.config),
+    AngularFirestoreModule
+    
   ],
   providers: [EmpolyeeService],
   bootstrap: [AppComponent]

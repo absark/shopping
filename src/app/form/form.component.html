@@ -1,18 +1,22 @@
 <h3>Regitration</h3>
-<form #form="ngForm" autocomplete="off" class="col-md-8">
+<form #form="ngForm" autocomplete="off" class="col-md-8" (submit)="onSubmit(form)">
     <div class="form-group">
-        <input type="text" name="fullname" [(ngModel)]="service.data.fullname" class="form-control">
+        <input type="text" name="fullname" #fullname="ngModel" [(ngModel)]="service.data.fullname" class="form-control">
     </div>
     <div class="form-group">
-        <input type="text" name="fullname" [(ngModel)]="service.data.fullname" class="form-control">
+        <input type="text" name="position" #position="ngModel" [(ngModel)]="service.data.position" class="form-control">
+        
     </div>
     <div class="row">
         <div class="form-group col-md-6">
-            <input type="text" name="fullname" [(ngModel)]="service.data.fullname" class="form-control">
+            <input type="text" name="empCode" #empCode="ngModel" [(ngModel)]="service.data.empCode" class="form-control">
         </div>
         <div class="form-group col-md-6">
-            <input type="text" name="fullname" [(ngModel)]="service.data.fullname" class="form-control">
+            <input type="text" name="mobile" #mobile="ngModel" [(ngModel)]="service.data.mobile" class="form-control">
         </div>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-info"> submit</button>
     </div>
 </form>
  
