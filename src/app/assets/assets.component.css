@@ -1,0 +1,44 @@
+ 
+   
+ .mr{
+    margin: 15px 10px;
+  }
+   
+     
+   .title{
+   padding: 5px auto;
+   width: 100%;
+     
+   }
+   .subtitle{
+     padding: 4px;
+   }
+   .h-price{
+       float: right;
+       font-size: 20px;
+       font-weight: 600;
+       color: rgba(92, 90, 90, 0.932);
+   }
+   .h-text{
+     font-size: 20px;
+       font-weight: 600;
+       color: rgba(92, 90, 90, 0.932);
+   }
+   .progress-bar{
+     margin-top: 5px;
+   }
+   .percentage{
+     float: right;
+     padding-top: 6px;
+     
+   }
+ 
+   
+    
+   .card-sec{
+     height: 400px;
+   }
+ 
+ 
+ 
+   

@@ -8,11 +8,13 @@ import { EmpolyeeService } from './shared/empolyee.service';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
+import { AssetsComponent } from './assets/assets.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FormComponent
+    FormComponent,
+    AssetsComponent
   ],
   imports: [
     BrowserModule,
